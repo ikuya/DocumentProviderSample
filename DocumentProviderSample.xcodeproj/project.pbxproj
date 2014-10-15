@@ -14,6 +14,11 @@
 		15ED79A719EE7305001FC922 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15ED79A619EE7305001FC922 /* Images.xcassets */; };
 		15ED79AA19EE7305001FC922 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15ED79A819EE7305001FC922 /* LaunchScreen.xib */; };
 		15ED79B619EE7305001FC922 /* DocumentProviderSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15ED79B519EE7305001FC922 /* DocumentProviderSampleTests.m */; };
+		15ED79CA19EE732D001FC922 /* DocumentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15ED79C919EE732D001FC922 /* DocumentPickerViewController.m */; };
+		15ED79CC19EE732D001FC922 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15ED79CB19EE732D001FC922 /* MainInterface.storyboard */; };
+		15ED79D819EE732E001FC922 /* FileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 15ED79D719EE732E001FC922 /* FileProvider.m */; };
+		15ED79DB19EE732E001FC922 /* DocumentProviderExtFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15ED79D119EE732E001FC922 /* DocumentProviderExtFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15ED79E019EE732E001FC922 /* DocumentProviderExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15ED79C319EE732D001FC922 /* DocumentProviderExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,50 @@
 			remoteGlobalIDString = 15ED799519EE7305001FC922;
 			remoteInfo = DocumentProviderSample;
 		};
+		15ED79D919EE732E001FC922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15ED798E19EE7305001FC922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15ED79D019EE732E001FC922;
+			remoteInfo = DocumentProviderExtFileProvider;
+		};
+		15ED79DC19EE732E001FC922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15ED798E19EE7305001FC922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15ED79D019EE732E001FC922;
+			remoteInfo = DocumentProviderExtFileProvider;
+		};
+		15ED79DE19EE732E001FC922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15ED798E19EE7305001FC922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15ED79C219EE732D001FC922;
+			remoteInfo = DocumentProviderExt;
+		};
+		15ED79E119EE732E001FC922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15ED798E19EE7305001FC922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15ED79C219EE732D001FC922;
+			remoteInfo = DocumentProviderExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15ED79E919EE732E001FC922 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				15ED79E019EE732E001FC922 /* DocumentProviderExt.appex in Embed App Extensions */,
+				15ED79DB19EE732E001FC922 /* DocumentProviderExtFileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		15ED799619EE7305001FC922 /* DocumentProviderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentProviderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +88,17 @@
 		15ED79AF19EE7305001FC922 /* DocumentProviderSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentProviderSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15ED79B419EE7305001FC922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15ED79B519EE7305001FC922 /* DocumentProviderSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentProviderSampleTests.m; sourceTree = "<group>"; };
+		15ED79C319EE732D001FC922 /* DocumentProviderExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		15ED79C619EE732D001FC922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15ED79C719EE732D001FC922 /* DocumentProviderExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentProviderExt.entitlements; sourceTree = "<group>"; };
+		15ED79C819EE732D001FC922 /* DocumentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentPickerViewController.h; sourceTree = "<group>"; };
+		15ED79C919EE732D001FC922 /* DocumentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerViewController.m; sourceTree = "<group>"; };
+		15ED79CB19EE732D001FC922 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		15ED79D119EE732E001FC922 /* DocumentProviderExtFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderExtFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		15ED79D419EE732E001FC922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15ED79D519EE732E001FC922 /* DocumentProviderExtFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentProviderExtFileProvider.entitlements; sourceTree = "<group>"; };
+		15ED79D619EE732E001FC922 /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
+		15ED79D719EE732E001FC922 /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +116,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15ED79C019EE732D001FC922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15ED79CE19EE732E001FC922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +138,8 @@
 			children = (
 				15ED799819EE7305001FC922 /* DocumentProviderSample */,
 				15ED79B219EE7305001FC922 /* DocumentProviderSampleTests */,
+				15ED79C419EE732D001FC922 /* DocumentProviderExt */,
+				15ED79D219EE732E001FC922 /* DocumentProviderExtFileProvider */,
 				15ED799719EE7305001FC922 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +149,8 @@
 			children = (
 				15ED799619EE7305001FC922 /* DocumentProviderSample.app */,
 				15ED79AF19EE7305001FC922 /* DocumentProviderSampleTests.xctest */,
+				15ED79C319EE732D001FC922 /* DocumentProviderExt.appex */,
+				15ED79D119EE732E001FC922 /* DocumentProviderExtFileProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +196,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		15ED79C419EE732D001FC922 /* DocumentProviderExt */ = {
+			isa = PBXGroup;
+			children = (
+				15ED79C819EE732D001FC922 /* DocumentPickerViewController.h */,
+				15ED79C919EE732D001FC922 /* DocumentPickerViewController.m */,
+				15ED79CB19EE732D001FC922 /* MainInterface.storyboard */,
+				15ED79C519EE732D001FC922 /* Supporting Files */,
+			);
+			path = DocumentProviderExt;
+			sourceTree = "<group>";
+		};
+		15ED79C519EE732D001FC922 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15ED79C619EE732D001FC922 /* Info.plist */,
+				15ED79C719EE732D001FC922 /* DocumentProviderExt.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15ED79D219EE732E001FC922 /* DocumentProviderExtFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				15ED79D619EE732E001FC922 /* FileProvider.h */,
+				15ED79D719EE732E001FC922 /* FileProvider.m */,
+				15ED79D319EE732E001FC922 /* Supporting Files */,
+			);
+			path = DocumentProviderExtFileProvider;
+			sourceTree = "<group>";
+		};
+		15ED79D319EE732E001FC922 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15ED79D419EE732E001FC922 /* Info.plist */,
+				15ED79D519EE732E001FC922 /* DocumentProviderExtFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +245,15 @@
 				15ED799219EE7305001FC922 /* Sources */,
 				15ED799319EE7305001FC922 /* Frameworks */,
 				15ED799419EE7305001FC922 /* Resources */,
+				15ED79E919EE732E001FC922 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				15ED79DA19EE732E001FC922 /* PBXTargetDependency */,
+				15ED79DD19EE732E001FC922 /* PBXTargetDependency */,
+				15ED79DF19EE732E001FC922 /* PBXTargetDependency */,
+				15ED79E219EE732E001FC922 /* PBXTargetDependency */,
 			);
 			name = DocumentProviderSample;
 			productName = DocumentProviderSample;
@@ -157,6 +278,40 @@
 			productReference = 15ED79AF19EE7305001FC922 /* DocumentProviderSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		15ED79C219EE732D001FC922 /* DocumentProviderExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15ED79E619EE732E001FC922 /* Build configuration list for PBXNativeTarget "DocumentProviderExt" */;
+			buildPhases = (
+				15ED79BF19EE732D001FC922 /* Sources */,
+				15ED79C019EE732D001FC922 /* Frameworks */,
+				15ED79C119EE732D001FC922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentProviderExt;
+			productName = DocumentProviderExt;
+			productReference = 15ED79C319EE732D001FC922 /* DocumentProviderExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		15ED79D019EE732E001FC922 /* DocumentProviderExtFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15ED79E319EE732E001FC922 /* Build configuration list for PBXNativeTarget "DocumentProviderExtFileProvider" */;
+			buildPhases = (
+				15ED79CD19EE732E001FC922 /* Sources */,
+				15ED79CE19EE732E001FC922 /* Frameworks */,
+				15ED79CF19EE732E001FC922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentProviderExtFileProvider;
+			productName = DocumentProviderExtFileProvider;
+			productReference = 15ED79D119EE732E001FC922 /* DocumentProviderExtFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +327,18 @@
 					15ED79AE19EE7305001FC922 = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = 15ED799519EE7305001FC922;
+					};
+					15ED79C219EE732D001FC922 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					15ED79D019EE732E001FC922 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 4N6C77CUXQ;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -190,6 +357,8 @@
 			targets = (
 				15ED799519EE7305001FC922 /* DocumentProviderSample */,
 				15ED79AE19EE7305001FC922 /* DocumentProviderSampleTests */,
+				15ED79C219EE732D001FC922 /* DocumentProviderExt */,
+				15ED79D019EE732E001FC922 /* DocumentProviderExtFileProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +375,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		15ED79AD19EE7305001FC922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15ED79C119EE732D001FC922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15ED79CC19EE732D001FC922 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15ED79CF19EE732E001FC922 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +417,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15ED79BF19EE732D001FC922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15ED79CA19EE732D001FC922 /* DocumentPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15ED79CD19EE732E001FC922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15ED79D819EE732E001FC922 /* FileProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +440,26 @@
 			isa = PBXTargetDependency;
 			target = 15ED799519EE7305001FC922 /* DocumentProviderSample */;
 			targetProxy = 15ED79B019EE7305001FC922 /* PBXContainerItemProxy */;
+		};
+		15ED79DA19EE732E001FC922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15ED79D019EE732E001FC922 /* DocumentProviderExtFileProvider */;
+			targetProxy = 15ED79D919EE732E001FC922 /* PBXContainerItemProxy */;
+		};
+		15ED79DD19EE732E001FC922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15ED79D019EE732E001FC922 /* DocumentProviderExtFileProvider */;
+			targetProxy = 15ED79DC19EE732E001FC922 /* PBXContainerItemProxy */;
+		};
+		15ED79DF19EE732E001FC922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15ED79C219EE732D001FC922 /* DocumentProviderExt */;
+			targetProxy = 15ED79DE19EE732E001FC922 /* PBXContainerItemProxy */;
+		};
+		15ED79E219EE732E001FC922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15ED79C219EE732D001FC922 /* DocumentProviderExt */;
+			targetProxy = 15ED79E119EE732E001FC922 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,6 +613,64 @@
 			};
 			name = Release;
 		};
+		15ED79E419EE732E001FC922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtFileProvider/DocumentProviderExtFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocumentProviderExtFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		15ED79E519EE732E001FC922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtFileProvider/DocumentProviderExtFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DocumentProviderExtFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		15ED79E719EE732E001FC922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderExt/DocumentProviderExt.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocumentProviderExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		15ED79E819EE732E001FC922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderExt/DocumentProviderExt.entitlements;
+				INFOPLIST_FILE = DocumentProviderExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +696,22 @@
 			buildConfigurations = (
 				15ED79BD19EE7305001FC922 /* Debug */,
 				15ED79BE19EE7305001FC922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15ED79E319EE732E001FC922 /* Build configuration list for PBXNativeTarget "DocumentProviderExtFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15ED79E419EE732E001FC922 /* Debug */,
+				15ED79E519EE732E001FC922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15ED79E619EE732E001FC922 /* Build configuration list for PBXNativeTarget "DocumentProviderExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15ED79E719EE732E001FC922 /* Debug */,
+				15ED79E819EE732E001FC922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
