@@ -36,17 +36,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSUbiquitousContainers</key>
-        <dict>
-            <key>iCloud.jp.if.DocumentProviderSample</key>
-			<dict>
-				<key>NSUbiquitousContainerIsDocumentScopePublic</key>
-				<true/>
-				<key>NSUbiquitousContainerSupportedFolderLevels</key>
-				<string>Any</string>
-				<key>NSUbiquitousContainerName</key>
-				<string>AppExtensionSamples</string>
-			</dict>
-        </dict>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.jp.if.DocumentProviderSample</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+			<true/>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>Any</string>
+			<key>NSUbiquitousContainerName</key>
+			<string>DocumentProviderSample</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
